@@ -10,9 +10,10 @@ Build classification model using various ML techniques
 
 * Dataset: kaggle datasets download -d tejashvi14/engineering-placements-prediction
 
-# Code
-* Download the code
-	course-ml-zoomcamp\midterm_project\placement\docker
+# Download Code
+* course-ml-zoomcamp --> midterm_project --> placement
+* pip install pipenv
+* pipenv install
 
 # start the server
 * linux: gunicorn --bind 0.0.0.0:9696 predict:app
