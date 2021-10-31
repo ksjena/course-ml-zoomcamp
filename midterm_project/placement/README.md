@@ -39,17 +39,24 @@ result = response.json() ## get the server response
 print(result)
 
 # docker details
-* FROM python:3.8.12-slim
-* WORKDIR /app
-* RUN pip install pipenv
-* COPY Pipfile Pipfile.lock ./
-* RUN pipenv install --deploy --system
-* COPY predict.py model.bin ./
-* EXPOSE 9696
-* ENTRYPOINT ["gunicorn", "--bind", "0.0.0.0:9696", "predict:app"]
+*[https://github.com/ksjena/course-ml-zoomcamp/tree/main/midterm_project/placement/docker] - Docker files
 
+* Dockerfile script
+	* FROM python:3.8.12-slim
+	* WORKDIR /app
+	* RUN pip install pipenv
+	* COPY Pipfile Pipfile.lock ./
+	* RUN pipenv install --deploy --system
+	* COPY predict.py model.bin ./
+	* EXPOSE 9696
+	* ENTRYPOINT ["gunicorn", "--bind", "0.0.0.0:9696", "predict:app"]
 
+# docker build
 * dokcer local: docker build -t placement-prediction .
 
+# docker push to docker hub
 * dokcer tagging: docker tag placement-prediction:latest ksjenar01/ml-in-action:placement-prediction
 * docker push to docker hub: docker push ksjenar01/ml-in-action:placement-prediction
+
+# Cloud deployment
+* TODO
