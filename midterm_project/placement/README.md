@@ -6,7 +6,7 @@ The Following Is The College Placements Data Compiled Over 2 years. **Use This D
 Perform Extensive EDAs And Bring Out Insights.
 Build classification model using various ML techniques
 
-* [https://www.kaggle.com/tejashvi14/engineering-placements-prediction?select=collegePlace.csv](Kaggle dataset reference)
+* [https://www.kaggle.com/tejashvi14/engineering-placements-prediction?select=collegePlace.csv] (Kaggle dataset reference)
 
 * Dataset: kaggle datasets download -d tejashvi14/engineering-placements-prediction
 
@@ -39,7 +39,7 @@ result = response.json() ## get the server response
 print(result)
 
 # docker details
-*[https://github.com/ksjena/course-ml-zoomcamp/tree/main/midterm_project/placement/docker] - Docker files
+* [https://github.com/ksjena/course-ml-zoomcamp/tree/main/midterm_project/placement/docker] Docker files
 
 * Dockerfile script
 	* FROM python:3.8.12-slim
